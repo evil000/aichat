@@ -1,8 +1,8 @@
 <template>
   <div class="text-neutral-400">
-    <span>Star on</span>
+    <span>Created by</span>
     <a href="https://github.com/evil000/aichat" target="_blank" class="text-blue-500">
-      GitHub
+      Binsy
     </a>
   </div>
 </template>
