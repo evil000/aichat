@@ -11,7 +11,7 @@ interface ConfigState {
   apiModel?: string
   socksProxy?: string
   httpsProxy?: string
-  balance?: string
+  usage?: string
 }
 
 const authStore = useAuthStore()
@@ -49,10 +49,10 @@ onMounted(() => {
           此项目开源于
           <a
             class="text-blue-600 dark:text-blue-500"
-            href="https://github.com/evil000/aichat"
+            href="c"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
           ，基于 MIT 协议。
         </p>
@@ -62,7 +62,7 @@ onMounted(() => {
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
-        {{ $t("setting.balance") }}：{{ config?.balance ?? '-' }}
+        {{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}
       </p>
       <p v-if="!isChatGPTAPI">
         {{ $t("setting.reverseProxy") }}：{{ config?.reverseProxy ?? '-' }}
